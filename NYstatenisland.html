@@ -110,18 +110,21 @@
 		img { -ms-interpolation-mode: bicubic; }
 		strong {font-weight: 900 !important;}
 		:hover.hoverText {background-color: #fbff04 !important; text-decoration-color: #fbff04 !important; margin: -0.1em -0.4em !important; padding: 0.1em 0.4em !important;}
-        :hover.hoverClicks {background-color: #005D8F !important; text-decoration-color: #005D8F !important; margin: -1.0em -1.0em !important; padding: 1.0em 1.0em !important; color: #ffffff !important; font-weight: 900 !important;}
+        .hoverClicks {background-color: transparent !important; margin: -1.4em -1.0em !important; padding: 1.4em 1.0em !important; -webkit-text-stroke: 0.0px; font-weight: 500; letter-spacing: 0.5; transition: all 0.2s ease-out;}
+        :hover.hoverClicks {background-color: #005D8F !important; text-decoration-color: #005D8F !important; margin: -1.4em -1.0em !important; padding: 1.4em 1.0em !important;  color: #ffffff !important; -webkit-text-stroke: 0.5px; transition: all 0.2s ease-out;}
         .hoverRule {z-index: -5 !important;}
-        .button:hover {box-shadow: 0 0 5px #1111119d, 0 0 10px #ffffff9d, 0 0 32px rgba(243, 255, 175, 0.53);}
+        .button:hover {box-shadow: 0 0 65px #000000, 0 0 10px #0000009d, 0 0 32px rgba(0, 0, 0, 0.53); transition: 0.36s ease-in-out; -moz-border-radius: 24px !important; -webkit-border-radius: 24px !important; border-radius: 24px !important;}
+        .button {transition: 0.36s ease-in-out !important;}
         .list-type {padding-bottom: 5px;}
         .liststack { width:140px!important; display:block!important; padding: 0 !important; margin-left: 0px !important;}
-        highlight { text-align: center !important; display: inline !important; }
-        highlight:hover {color: #ffffff !important; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fbff04, 0 0 82px #fbff04,0 0 92px #fbff04; }
+        highlight { text-align: center !important; display: inline !important; cursor: default !important;}
+        highlight:hover {color: #ffffff !important; -webkit-text-stroke: 0.75px rgb(255, 255, 255); text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000, 1px 1px 0 #000;}
         bullet { display: inline !important; max-height:none !important;  }
         bulletHide { width: 0px !important; display: none !important; }
-        .hoverFooterBttn {-webkit-filter: opacity(80%);  filter: opacity(80%); transition: 0.4s;}
-        .hoverFooterBttn:hover {-webkit-filter: opacity(100%);  filter: opacity(100%); transition: 0.4s;}
-        :hover.helpButton {mix-blend-mode: normal !important;}
+        .hoverFooterBttn:hover {-webkit-box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.20), 0px 0px 10px 16px rgba(0,0,0,0.10); box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.20), 0px 0px 10px 16px rgba(0,0,0,0.10); transition: box-shadow 0.3s ease-in-out; }
+        .hoverFooterBttn {-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0); box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0); transition: box-shadow 0.3s ease-in-out; }
+        .helpButton {filter: drop-shadow(0px 0px 0px transparent) !important; transition: filter  0.3s ease-in-out;}
+        :hover.helpButton {filter: drop-shadow(0px 0px 6px #000000a1) !important; transition: filter 0.3s ease-in-out;}
         accentSite {color: #0FABFF !important}
 		/* RESET STYLES */
 		img { border: 0; outline: none; text-decoration: none; }
@@ -509,11 +512,10 @@
                                     <!-- BUTTON -->
                                     <table class="mobile-320" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                         <td align="center" valign="top">
-                                            <table class="mobile-200" role="presentation" width="200" cellpadding="0" cellspacing="0" border="2px solid #ffffff" border-radius="4px" style="border: 2px solid #ffffff; border-radius: 4px;">
+                                            <table class="mobile-200" role="presentation" width="200" cellpadding="0" cellspacing="0" border="0">
                                                 <tbody><tr>
-                                                     <td align="center " style="font-family: Helvetica, Arial, sans-serif; background-color:#1C1E22; color:#ffffff; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; font-size:12px;">
-                                                        <a href="https://reader.si.silive.com" target="_blank" class="button"  style="padding:9px 4px; min-width:86px; display:block; text-decoration:none; text-align:center; font-size:12px; color:#ffffff; background:#1C1E22; mso-line-height-rule:exactly; line-height:22px; font-weight: bold; "><font style="color:#ffffff;">See it now!</font></a></td>
-                                                </tr></tbody>
+                                                     <td align="center" style="font-family: Helvetica, Arial, sans-serif; background-color:#1C1E22; color:#ffffff; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; font-size:12px;">
+                                                        <a href="https://reader.si.silive.com" target="_blank" class="button"  style="padding:9px 4px; min-width:86px; display:block; text-decoration:none; text-align:center; font-size:12px; color:#ffffff; background:#1C1E22; mso-line-height-rule:exactly; line-height:22px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 2px solid #ffffff;"><font style="color:#ffffff;">See it now!</font></a></td>
                                             </table>
                                             <!--SPACER BELOW BUTTON--><tr><td height="50" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                         </td>
@@ -586,12 +588,12 @@
                                 </td>
                             </table>
                             <!-- END FOOTER CONTACTS 400-->
-                            <!-- START FOOTER RULE 400 ABOVE RIBBON-->
+                            <!-- START FOOTER RULE 400 BELOW RIBBON-->
                             <table class="mobile-320" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                 <td align="center" valign="top">
                                     <table class="mobile-260" role="presentation" width="330" cellpadding="0" cellspacing="0" border="0">
                                         <td align="center" valign="top">
-                                            <!--SPACER--><tr><td height="10" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
+                                            <!--SPACER--><tr><td height="15" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                             <td width="100%" align="center"style="padding: 0px; border-top: 1px solid #005D8F;"></td>
                                             <!--SPACER--><tr><td height="55" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                         </td>
@@ -609,7 +611,7 @@
                                             width="" attribute must be set -->
                                             <a rel="noopener" href="https://reader.si.silive.com" target="_blank"><img src="https://media.sailthru.com/composer/images/bazh/b06qxuqh/1lf/ff3/rv6/FOOTERLOGO_NY_StatenIsland.png" width="260" style="margin:0; padding:0; border:none; display:block;" border="0" alt="the Staten Island Advance logo" /></a>
                                         </td>
-                                        <!--SPACER--><tr><td height="30" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
+                                        <!--SPACER--><tr><td height="40" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                     </table>
                                 <!-- END FOOTER LOGO 200-->
                                 </td>
@@ -620,9 +622,9 @@
                             <!-- START APP PROMPT-->
                             <table class="mobile-320" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                 <td align="center" valign="top">
-                                    <p class="footer-text-resize" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#005D8F; font-size:12px; line-height:16px; font-weight: 500; text-align: center; text-wrap: balance; text-transform: uppercase; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">Download the app</p> 
+                                    <p class="footer-text-resize" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#005D8F; font-size:12px; line-height:16px; font-weight: 500; text-align: center; text-wrap: balance; text-transform: uppercase; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; letter-spacing: 0.5;">Download the app</p> 
                                 </td>
-                                <!--SPACER--><tr><td height="15" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
+                                <!--SPACER--><tr><td height="20" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                             </table>
                             <!-- END APP PROMPT--> 
 
@@ -704,10 +706,10 @@
                                 <td align="center" valign="top">                             
                                     <table class="mobile-200" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                         <td align="right" valign="top">
-                                            <a rel="noopener" href="mailto:digitalservice@silive.com?subject=Please%20help%20me with%20the Staten Island Advance" target="_top"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/4aw/z38/hpi/HELP_email.png" width="75px" height="75px" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#005D8F; background:transparent; mso-line-height-rule:exactly; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;  mix-blend-mode: multiply;" class="helpButton" alt="Email digitalservice@silive.com"/></a>
+                                            <a rel="noopener" href="mailto:digitalservice@silive.com?subject=Please%20help%20me with%20the Staten Island Advance" target="_top"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/kgv/bjt/7hn/HELP_email_1.png" width="75px" height="75px" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#005D8F; background:transparent; mso-line-height-rule:exactly; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px;" class="helpButton" alt="Email digitalservice@silive.com"/></a>
                                         </td>
                                         <td align="left" valign="top">
-                                            <a rel="noopener" href="tel:17188163900" target="_blank"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/8zq/zzx/mog/HELP_phone.png" width="75px" height="75px" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#005D8F; background:transparent; mso-line-height-rule:exactly; -moz-border-radius: 50px; -webkit-border-radius: 50px;  border-radius: 50px; mix-blend-mode: multiply;" class="helpButton" alt="Call 17188163900"/></a>
+                                            <a rel="noopener" href="tel:17188163900" target="_blank"><img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/swh/6in/jwc/HELP_phone_1.png" width="75px" height="75px" style="display:block; text-decoration:none; text-align:center; font-size:12px; color:#005D8F; background:transparent; mso-line-height-rule:exactly; -moz-border-radius: 50px; -webkit-border-radius: 50px;  border-radius: 50px;" class="helpButton" alt="Call 17188163900"/></a>
                                         </td>
                                     </table>
                                 </td>
