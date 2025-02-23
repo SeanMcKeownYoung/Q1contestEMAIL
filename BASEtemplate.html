@@ -14,7 +14,7 @@
     
     </xml><![endif]-->
     <meta charset="utf-8" />
-    <title>You'll be entered in a drawing to win ALLPrizeText every day you read SITENAME!</title>
+    <title>You'll be entered in a drawing to win ALLPrizeText every day you read SITENAME<!--Z-->!</title>
     <!-- add icon link -->
     <link rel="icon" href="REPLACEfavicon"type="image/x-icon" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -37,30 +37,30 @@
 				Read to <accentSite>win!</accentSite>  
 
 		/* CONTEST TEXT - CORRESPONDS TO EXCEL FILE *
-			March 2 (corresponds to Excel file Start date without the year)
-			March 29 (corresponds to Excel file End date without the year)
-			March 1 (corresponds to Excel file Sub date)
-			28 (corresponds to Excel file Total days)
-			2025 (the year of the contest)
+			StartDate (corresponds to Excel file Start date without the year)
+			EndDate (corresponds to Excel file End date without the year)
+			SubDate (corresponds to Excel file Sub date)
+			TotalDays (corresponds to Excel file Total days)
+			YearText (the year of the contest)
 
 			(ALLPrizeText text corresponds to Excel file fields) 
-			one of three (3) $500 Visa Gift Cards 
-			one of five (5) $500 Visa Gift Cards 
-			a $500 Visa Gift Card
-			one of three (3) $500 Visa Gift Cards
-			one of five (5) $500 Visa Gift Cards	
-			one of five (5) $500 Visa Gift Cards	
-			one of five (5) $500 Visa Gift Cards	
-			one of three (3) $500 Visa Gift Cards
+			MA-SPR-Prize 
+			MI-Prize 
+			NJ-Prize
+			NY-SIA-Prize
+			NY-SYR-Prize	
+			OH-CLE-Prize	
+			OR-PDX-Prize	
+			PA-HBG-Prize
 		/
 
 			PREHEADER TEXT INTRO:  Notes: The preheader is the short description that shows up in the email preview. For the contest, this is the standard - but if you choose to edit it - do a Find/Replace.
                 Read to win! You'll be entered in a drawing to win ALLPrizeText every day you read
 
-			INTRO: The standard is "Every day you read SITENAME, you'll be entered in a drawing to win ALLPrizeText. Reading every day from March 2 to March 29 will give you 28 chances to win!. This works well. To edit it, follow these instructions in order.
+			INTRO: The standard is "Every day you read SITENAME, you'll be entered in a drawing to win ALLPrizeText. Reading every day from StartDate to EndDate will give you TotalDays chances to win!. This works well. To edit it, follow these instructions in order.
             1. Find "<strong>Every day you read" Replace with your text being sure to make it work with the site name following. (The site's name is placed in the string)
             2. Find ", you'll be entered in a drawing to win" and be sure that the ALLPrizeText works after. 
-            3. Find " Reading every day from March 2 to March 29 will give you 28 chances to win!"
+            3. Find " Reading every day from StartDate to EndDate will give you TotalDays chances to win!"
             You can also replace small chunks of the intro text - but it's best to choose a few words in a row, or you run the risk of accidentally grabbing text you hadn't intended upon editing.
 		
 
@@ -78,7 +78,7 @@
             SITENAME    (name of site)
                         (replace with the name of the site only for digital only products. Don't add 'online')
                         (Sites that also have print products should get the word online at the end of their name, 
-                        to do so, search for  and replace with &nbsp;online )
+                        to do so, search for <!--Z--> and replace with &nbsp;online )
 
             SITEURL     (address of online newspaper)
 
@@ -97,18 +97,74 @@
 
             STATE
 
-            75FF00   (group color branding - Lighter)
-
-            3D8500   (group color branding - Darker)
-
-            3e3e3e   (footer text - Dark)
-
 
         Other:  
 
             DATE FOR COPYRIGHT
                 ©2025
                     (replace with © + new year)
+
+
+            FIND/REPLACE COLOR BRANDING TEMPLATE
+
+                cecece   (group color branding - Light)
+
+                656565   (group color branding - Mid)
+
+                464646   (group color branding - Dark)
+
+
+        ALL ENTERPRISE COLOR BRANDING:
+
+            BLUE 01 (MORE GREEN) /// HUNTSVILLE / MOBILE / CLEVELAND / SYRACUSE / HARRISBURG / STATEN ISLAND
+
+                cecece   (group color branding - Light)
+
+                656565   (group color branding - Mid)
+
+                124b80   (group color branding - Dark)
+
+
+            BLUE 02 (MORE VIOLET) /// MICHIGAN
+
+                46a6ff   (group color branding - Light)
+
+                178be3   (group color branding - Mid)
+
+                175499   (group color branding - Dark)
+            
+
+            RED /// BIRMINGHAM / SPRINGFIELD / EASTON
+
+                f9443a   (group color branding - Light)
+
+                D00000   (group color branding - Mid)
+
+                ba0202   (group color branding - Dark)
+
+
+            GREEN 01 (MORE YELLOW) /// NEW JERSEY
+
+                cecece   (group color branding - Light)
+
+                65d305   (group color branding - Mid)
+
+                3D8500   (group color branding - Dark)
+
+
+            GREEN 02 (MORE BLUE) /// OREGON
+
+
+                cecece   (group color branding - Light)
+
+                1bbd02   (group color branding - Mid)
+
+                008900   (group color branding - Dark)
+
+
+            ALL 
+
+            242424   (footer text ALL - Dark)
 			
 
 		/* CLIENT-SPECIFIC STYLES */
@@ -117,10 +173,10 @@
 		img { -ms-interpolation-mode: bicubic; }
 		strong {font-weight: 900 !important;}
 		:hover.hoverText {background-color: #fbff04 !important; text-decoration-color: #fbff04 !important; margin: -0.1em -0.4em !important; padding: 0.1em 0.4em !important;}
-        .hoverClicks {background-color: transparent !important; margin: -1.4em -1.0em !important; padding: 1.4em 1.0em !important; -webkit-text-stroke: 0.0px; font-weight: 500; letter-spacing: 0.5; transition: all 0.2s ease-out;}
-        :hover.hoverClicks {background-color: #3e3e3e !important; text-decoration-color: #3e3e3e !important; margin: -1.4em -1.0em !important; padding: 1.4em 1.0em !important;  color: #ffffff !important; -webkit-text-stroke: 0.5px; transition: all 0.2s ease-out;}
+        .hoverClicks {background-color: transparent !important; margin: -1.0em -1.0em !important; padding: 1.0em 1.0em !important; -webkit-text-stroke: 0.0px; font-weight: 500; letter-spacing: 0.5 !important; transition: all 0.2s ease-out;}
+        :hover.hoverClicks {background-color: #464646 !important; text-decoration-color: #242424 !important; margin: -1.6em -1.0em !important; padding: 1.6em 1.0em !important;  color: #ffffff !important; -webkit-text-stroke: 0.5px !important; letter-spacing: 0.5 !important; z-index: 5 !important; position: relative !important; box-shadow: 0px 0px 0px 6px #cecece;  transition: all 0.2s ease-out;}
         .hoverRule {z-index: -5 !important;}
-        .button:hover {box-shadow: 0 0 65px #000000, 0 0 10px #0000009d, 0 0 32px rgba(0, 0, 0, 0.53); transition: 0.36s ease-in-out; -moz-border-radius: 24px !important; -webkit-border-radius: 24px !important; border-radius: 24px !important;}
+        .button:hover {box-shadow: 0 0 65px #000000, 0 0 10px #0000009d, 0 0 32px rgba(0, 0, 0, 0.53); transition: 0.36s ease-in-out; -moz-border-radius: 24px !important; -webkit-border-radius: 24px !important; border-radius: 24px !important; border: 2px solid #cecece !important;}
         .button {transition: 0.36s ease-in-out !important;}
         .list-type {padding-bottom: 5px;}
         .liststack { width:140px!important; display:block!important; padding: 0 !important; margin-left: 0px !important;}
@@ -132,7 +188,7 @@
         .hoverFooterBttn {-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0); box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px 0px rgba(0, 0, 0, 0); transition: box-shadow 0.3s ease-in-out; }
         .helpButton {filter: drop-shadow(0px 0px 0px transparent) !important; transition: filter  0.3s ease-in-out;}
         :hover.helpButton {filter: drop-shadow(0px 0px 6px #000000a1) !important; transition: filter 0.3s ease-in-out;}
-        accentSite {color: #75FF00 !important}
+        accentSite {color: #cecece !important}
 		/* RESET STYLES */
 		img { border: 0; outline: none; text-decoration: none; }
 		table { border-collapse: collapse !important; }
@@ -301,7 +357,7 @@
 		max-width:0px;
 		opacity:0;
 		overflow:hidden;">
-        Read to win! You'll be entered in a drawing to win ALLPrizeText every day you read SITENAME!
+        Read to win! You'll be entered in a drawing to win ALLPrizeText every day you read SITENAME<!--Z-->!
 		</td>
 	</tr>
 	<!-- END PREHEADER -->
@@ -360,9 +416,9 @@
                 <!-- START CONTEST CAMPAIGN -->
                         <!--HERO-->
                         <td align="center" valign="top">
-                            <table class="imgresize60 img" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
+                            <table class="imgresize80 img" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                 <td align="center" valign="top">
-                                    <img src="https://media.sailthru.com/composer/images/bazh/wxt6ga5j/ibg/wzz/tmb/2025_Q1_MARKETING%20illo.png" width="80%" height="auto" style="margin:0; padding:0; border:none;" border="0" alt="cover"/>
+                                    <img src="https://placehold.co/800x1000.jpg" width="100%" height="auto" style="margin:0; padding:0; border:none;" border="0" alt="cover"/>
                                 </td>
                             </table>
                             <!--SPACER-->
@@ -381,7 +437,7 @@
                         <td align="center" valign="top">
                             <table class="mobile-200" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                 <td align="center" valign="top">
-								<p class="intro-text-resize" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; color: #e7e7e7; text-wrap: balance;"><strong>Every day you read SITENAME, you'll be entered in a drawing to win ALLPrizeText.</strong></span> Reading every day from March 2 to March 29 will give you 28 chances to win!</p>
+								<p class="intro-text-resize" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; color: #e7e7e7; text-wrap: balance;"><strong>Every day you read SITENAME<!--Z-->, you'll be entered in a drawing to win ALLPrizeText.</strong></span> Reading every day from StartDate to EndDate will give you TotalDays chances to win!</p>
                                 </td>
                             </table>
                             <!--SPACER-->
@@ -460,7 +516,7 @@
                                     <!-- ONLY HEADLINE -->
                                     <td align="center" valign="top">
                                         <div class="mobile-200" style="display: inline-block; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; text-align: center; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; text-wrap: balance; color: #e7e7e7;"> 
-                                             <span>Only in SITENAME.</span>
+                                             <span>Only in SITENAME<!--Z-->.</span>
                                         </div>
                                          <!-- SPACER -->
                                          <tr>
@@ -523,6 +579,7 @@
                                                 <tbody><tr>
                                                      <td align="center" style="font-family: Helvetica, Arial, sans-serif; background-color:#1C1E22; color:#ffffff; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px; font-size:12px;">
                                                         <a href="https://SITEURL" target="_blank" class="button"  style="padding:9px 4px; min-width:86px; display:block; text-decoration:none; text-align:center; font-size:12px; color:#ffffff; background:#1C1E22; mso-line-height-rule:exactly; line-height:22px; font-weight: bold; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: 2px solid #ffffff;"><font style="color:#ffffff;">See it now!</font></a></td>
+                                                </tr></tbody>
                                             </table>
                                             <!--SPACER BELOW BUTTON--><tr><td height="50" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                         </td>
@@ -540,7 +597,7 @@
                             <!-- START FINEPRINT -->
                                     <table class="mobile-200" role="presentation" width="500" cellpadding="0" cellspacing="0" border="0">
                                         <td align="center" valign="top">
-                                            <p class="small-text-resize mobile-300" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 11px; line-height: 16px; color: #e7e7e7; text-wrap: balance;"><strong>Contest Details. </strong> No Purchase Necessary. Visit <a rel="noopener" href="https://CONTESTURL" target="_blank" style="color:#e7e7e7; text-decoration:underline;">CONTESTURL</a> for full rules. Starts 12:01 AM ET March 2, 2025 and ends 11:59 PM ET March 29, 2025. Open to legal residents of STATE 18 or older who are subscribers of SITENAME as of March 1, 2025 except employees of Sponsor, their immediate families and those living in the same household. Odds of winning depend on the number of entries received. Void outside of STATE and where prohibited. A.R.V. of ALLPrizeText. Sponsor: Advance Local Media LLC.</p>
+                                            <p class="small-text-resize mobile-300" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 11px; line-height: 16px; color: #e7e7e7; text-wrap: balance;"><strong>Contest Details. </strong> No Purchase Necessary. Visit <a rel="noopener" href="https://CONTESTURL" target="_blank" style="color:#e7e7e7; text-decoration:underline;">CONTESTURL</a> for full rules. Starts 12:01 AM ET StartDate, YearText and ends 11:59 PM ET EndDate, YearText. Open to legal residents of STATE 18 or older who are subscribers of SITENAME as of SubDate, YearText except employees of Sponsor, their immediate families and those living in the same household. Odds of winning depend on the number of entries received. Void outside of STATE and where prohibited. A.R.V. of ALLPrizeText. Sponsor: Advance Local Media LLC.</p>
                                         </td>
                                         <!--SPACER-->
                                         <tr><td height="30" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
@@ -566,7 +623,7 @@
 		<tr>
 			<td align="center" valign="top">
                 <!-- START FOOTER MAIN 600-->
-				<table class="mobile-320 inset" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#75FF00;" bgcolor="#75FF00">
+				<table class="mobile-320 inset" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#cecece;" bgcolor="#cecece">
 						<td align="center" valign="top">
 
                             <!-- START FOOTER RULE 400 ABOVE RIBBON-->
@@ -692,7 +749,7 @@
                             <!-- START FOOTER ADDRESS 400-->
                                 <table class="mobile-320" role="presentation" width="400" cellpadding="0" cellspacing="0" border="0">
                                     <td width="100%" align="center" style="font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; color:#3e3e3e; font-size:12px; line-height:16px; font-weight: 400; text-align: center; text-wrap: balance; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility">
-                                        <p style="color:#3e3e3e; display: inline; "><strong>SITENAME. </strong>SITEADDRESS.</p>
+                                        <p style="color:#3e3e3e; display: inline; "><strong>SITENAME<!--Z-->. </strong>SITEADDRESS.</p>
                                         <p style="color:#3e3e3e; display: inline; font-weight: 500; filter: opacity(70%);">You received this email because you are a subscriber to <a rel="noopener" href="https://www.DOTCOM/" class="hovertext"  target="_blank" style="color:#3e3e3e; text-decoration:none;">DOTCOM</a> or <a rel="noopener" href="https://SITEURL" class="hovertext"  target="_blank" style="color:#3e3e3e; text-decoration:none;">SITENAME</a>. Click here to<a rel="noopener" href="{optout_confirm_url + '&list_param=' + blast.list}" class="hoverText"  target="_blank" style="color:#3e3e3e; text-decoration:underline;"> Unsubscribe.</a></p>
                                         <!--SPACER--><tr><td height="20" style="font-size:10px; line-height:1;">&nbsp;</td></tr>
                                     </td>
